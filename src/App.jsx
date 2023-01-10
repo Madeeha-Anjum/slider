@@ -1,34 +1,27 @@
-import React, { useState } from "react";
-import Icons from "./components/icons/index";
-import "./App.css";
+import React from "react";
+import { Link } from "react-router-dom";
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
-  // conditionally render the slide class
-  const sliderClass = isOpen ? "slider open" : "slider closed";
-  const toggleSlider = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <>
-      <div className={sliderClass}>
-        <div className="menu-wrapper">
-          <button
-            title="Home"
-            type="button"
-            onClick={() => {
-              toggleSlider();
+      <div style={{ margin: "1em" }}>
+        <h1>Different Ways to Write CSS in React</h1>
+        <div>
+          <h2>Importing external stylesheets</h2>
+          <Link
+            to={`/external-stylesheets`}
+            style={{
+              color: "red",
+              border: "1px solid black",
+              borderRadius: "0.5em",
+              padding: "0.5em",
+              backgroundColor: "white",
+              textDecoration: "none",
+              cursor: "pointer",
             }}
-            className="menu-btn"
           >
-            <Icons.Home style={{ width: "2em", height: "2em" }} />
-          </button>
-
-          <div className="menu">
-            <h1>React App</h1>
-            <h1>React App</h1>
-          </div>
+            External Stylesheets
+          </Link>
         </div>
       </div>
     </>
