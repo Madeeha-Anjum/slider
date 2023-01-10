@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import "./App.css";
+
 function App() {
   return (
     <>
@@ -8,19 +10,14 @@ function App() {
         <h1>Different Ways to Write CSS in React</h1>
         <div>
           <h2>Importing external stylesheets</h2>
-          <Link
-            to={`/external-stylesheets`}
-            style={{
-              color: "red",
-              border: "1px solid black",
-              borderRadius: "0.5em",
-              padding: "0.5em",
-              backgroundColor: "white",
-              textDecoration: "none",
-              cursor: "pointer",
-            }}
-          >
+          <Link className="link" to={`/external-stylesheets`}>
             External Stylesheets
+          </Link>
+        </div>
+        <div>
+          <h2>Use CSS Modules</h2>
+          <Link className="link" to={`/css-modules`}>
+            CSS Modules
           </Link>
         </div>
       </div>

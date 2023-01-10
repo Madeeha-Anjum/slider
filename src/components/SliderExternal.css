@@ -37,6 +37,27 @@
   height: 100%;
 }
 
+.menu > * {
+  display: block;
+  border-bottom: 1px solid #fff;
+  text-decoration: none;
+  font-size: 2em;
+  border-radius: 0.5em;
+  color: #fff;
+  padding: 0.5em;
+  margin: 0.5em;
+  transform: scale(1);
+}
+
+.menu > *:hover {
+  background: #fff;
+  color: #d6204e;
+}
+
+.menu:active {
+  transform: scale(0.9);
+}
+
 .menu-btn {
   /* not take up space  */
   position: absolute;

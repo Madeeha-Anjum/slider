@@ -5,6 +5,7 @@ import ExternalStylesheets from "./routes/ExternalStylesheets";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
+import CssModules from "./routes/CssModules";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/external-stylesheets",
     element: <ExternalStylesheets />,
+  },
+  {
+    path: "/css-modules",
+    element: <CssModules />,
   },
 ]);
 

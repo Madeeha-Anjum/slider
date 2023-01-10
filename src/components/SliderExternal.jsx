@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Icons from "./icons/index";
 import "./SliderExternal.css";
+import { Link } from "react-router-dom";
 
 const SliderExternal = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,8 +27,7 @@ const SliderExternal = () => {
           </button>
 
           <div className="menu">
-            <h1>React App</h1>
-            <h1>React App</h1>
+            <Link to={`/`}>Home</Link>
           </div>
         </div>
       </div>
