@@ -1,6 +1,6 @@
 # Slider
 
-- slider menu using react and CSS
+- Created a slider using 3 Different Ways of CSS in React
 
 ## Local Setup
 
