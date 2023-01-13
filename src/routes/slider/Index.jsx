@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Index.css";
 
 const Index = () => {
@@ -30,8 +30,6 @@ const Index = () => {
           </Link>
         </div>
       </div>
-      {/* Child pages shown once Link are */}
-      <Outlet></Outlet>
     </>
   );
 };
