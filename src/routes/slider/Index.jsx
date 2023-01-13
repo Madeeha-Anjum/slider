@@ -29,6 +29,12 @@ const Index = () => {
             Styled Components
           </Link>
         </div>
+        <div>
+          <h2>4. Css in js libraries: Emotion </h2>
+          <Link className="link" to={`/slider/emotion`}>
+            Emotion
+          </Link>
+        </div>
       </div>
     </>
   );

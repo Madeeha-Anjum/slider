@@ -7,6 +7,7 @@ import ExternalStylesheets from "./routes/slider/ExternalStylesheets";
 import CssModules from "./routes/slider/CssModules";
 import StyledComponents from "./routes/slider/StyledComponents";
 import Slider from "./routes/slider/Index.jsx";
+import Emotion from "./routes/slider/Emotion";
 
 function App() {
   return (
@@ -21,10 +22,8 @@ function App() {
             element={<ExternalStylesheets />}
           />
           <Route path="css-modules" element={<CssModules />} />
-          <Route
-            path="styled-components"
-            element={<StyledComponents></StyledComponents>}
-          />
+          <Route path="styled-components" element={<StyledComponents />} />
+          <Route path="emotion" element={<Emotion />} />
         </Route>
       </Routes>
       <div style={{ marginTop: "100vh" }}></div>
