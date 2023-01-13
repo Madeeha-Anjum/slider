@@ -1,32 +1,34 @@
 import React, { useState } from "react";
-import Icons from "./icons/index";
-import "./SliderExternal.css";
+import styles from "./SliderCssModules.module.css";
+import Icons from "../icons/index";
 import { Link } from "react-router-dom";
 
-const SliderExternal = () => {
+const SliderCssModules = () => {
   const [isOpen, setIsOpen] = useState(false);
   // conditionally render the slide class
-  const sliderClass = isOpen ? "slider open" : "slider closed";
+  const sliderClass = isOpen
+    ? `${styles.slider} ${styles.open}`
+    : `${styles.slider} ${styles.closed}`;
+
   const toggleSlider = () => {
     setIsOpen(!isOpen);
   };
-
   return (
     <>
       <div className={sliderClass}>
-        <div className="menu-wrapper">
+        <div className={styles["menu-wrapper"]}>
           <button
             title="Home"
             type="button"
             onClick={() => {
               toggleSlider();
             }}
-            className="menu-btn"
+            className={styles["menu-btn"]}
           >
             <Icons.Home style={{ width: "2em", height: "2em" }} />
           </button>
 
-          <div className="menu">
+          <div className={styles.menu}>
             <Link to={`/`}>Home</Link>
           </div>
         </div>
@@ -35,4 +37,4 @@ const SliderExternal = () => {
   );
 };
 
-export default SliderExternal;
+export default SliderCssModules;
