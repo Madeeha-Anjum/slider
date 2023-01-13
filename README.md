@@ -1,6 +1,6 @@
 # Slider
 
-- Created a slider using 3 Different Ways of CSS in React
+- Created a slider using 4 Different Ways of CSS in React
 
 ## Local Setup
 
